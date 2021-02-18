@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "klavika-bold";
+    src: url("../fonts/klavika-bold.otf");
+}
+
+@font-face{
+    font-family: "lato-bold";
+    src: url("../fonts/Lato-Black.ttf");
+}
+.clear{
+    clear: both;
+}
+.center{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background: #f0f2f5;
+}
+
+.main{
+    width: 100%;
+    padding-top: 15%;
+}
+
+.container-facebook{
+    width: 50%;
+    float: left;
+    padding-top: 10%;
+    
+}
+
+.facebook p{
+    color: rgb(24,119,242);
+    font-size: 60px;
+    font-family: "klavika-bold";
+    margin-right: 20px;
+}
+
+.facebook p{
+    transition: 1s;
+}
+
+.facebook p:hover{
+    color: rgb(187, 190, 211);
+}
+
+.container-facebook .description p{
+    color: black;
+    font-size: 25px;
+    font-family: helvetica;
+}
+
+.description{
+    padding-top: 10px;
+}
+
+.container-form{
+    float: right;
+    width: 45%;
+    background: white;
+    box-shadow: 1px 2px 9px rgba(104, 104, 104,0.4);
+    border-radius: 8px;
+}
+
+form{
+    padding-top: 2px;
+    text-align: center;
+    
+    
+}
+
+.container-form input{
+    width: 92%;
+    height: 55px;
+    padding-left: 4%;
+    font-size: 17px;
+    color: rgb(144, 148, 156);
+    border: solid 2px rgb(233, 236, 240);
+    border-radius: 7px;
+    margin-top: 15px;
+}
+
+.container-form input[type=submit]{
+    background: rgb(24,119,242);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "lato-bold";
+}
+
+.container-form p{
+    color: rgb(21, 105, 214);
+    font-family: arial;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 4% 0;
+    cursor: pointer;
+}
+
+.line{
+    height: 1px;
+    display: block;
+    margin: 5% auto;
+    border: 0;
+    background: rgb(211, 211, 211);
+    width: 90%;
+}
+
+.container-input{
+    margin-top: 3%;
+    margin-bottom: 22px;
+}
+
+.container-form .container-input input{
+    background: rgb(66,183,42);
+    font-family: "lato-bold";
+    font-size: 17px;
+    width: 47%;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.criar-pag{
+position: relative;
+font-size: 14px;
+font-family: helvetica;
+text-align: right;
+margin-top: 25px;
+padding-right: 16px;
+}
+
+.block{
+    width: 100%;
+    height: 140px;
+    background: rgb(240, 242, 245);
+}
+.lang{
+    margin-top: 25px;
+    border-bottom: 1px solid rgb(220, 225, 233);
+    margin-bottom: 20px;
+}
+
+.lang p{
+    color: gray;
+    display: inline-block;
+    font-family: helvetica;
+    padding-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.lang p:hover{
+    text-decoration: underline;
+}
+.lang input{
+    width: 29px;
+    border-radius: 2px;
+    height: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid rgb(193, 195, 197);
+}
+
+.lang-input{
+    display: inline-block;
+    margin-left: 7px;
+}
+
+.rodape{
+    margin-bottom: 23px;
+}
+.rodape p{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: helvetica;
+    color: gray;
+}
+
+.rodape p:hover{
+text-decoration: underline;
+}
+.rodape-face{
+    margin-bottom: 25px;
+    font-size: 13px;
+    font-family: helvetica;
+    color: gray;
+}
+
+@media screen and (max-width: 840px){
+    
+    .container-facebook{
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 50px;
+        padding-top: 20px;
+    }
+
+    .main{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .container-form{
+        display: block;
+        float: none;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .block{
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container-input{
+        margin-top: 0;
+        margin-bottom: 22px;
+        padding-bottom: 25px;
+    }
+
+    .header{
+        height: auto;
+    }
+
+    .criar-pag{
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+    .criar-pag p{
+        text-align: center;
+    }
+}
